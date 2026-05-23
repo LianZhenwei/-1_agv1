@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="path_record" type="path_record_node" name="path_record" output="screen" >
+</launch>

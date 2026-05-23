@@ -1,0 +1,7 @@
+<launch>
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find urdf_by)/config/latice.rviz" />
+    <node pkg="can_pkg" type="mycan_pub" name="mycan_pub"  output="screen"/>
+    <node pkg="by_global_path_planning" type="djstl" name="djstl"  output="screen"/>
+    <node pkg="by_pure_pursuit" type="pure_pursuit" name="pure_pursuit"  output="screen"/>
+    <node pkg="by_local_path_planning" type="palletizing" name="palletizing"  output="screen"/>
+</launch>

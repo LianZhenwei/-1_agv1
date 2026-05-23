@@ -1,0 +1,5 @@
+<launch>
+
+<node pkg="dwa_local_planner" type="dwa_local_planner_node" name="dwa_local_planner_node"  output="screen"/>
+
+</launch>

@@ -1,0 +1,5 @@
+<launch>
+
+	<node pkg="lidar_ros" type="total_distance" name="total_distance" output="screen" />
+
+</launch>

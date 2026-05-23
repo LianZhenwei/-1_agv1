@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="by_local_path_planning" type="elevator3" name="elevator3"  output="screen"/>
+</launch>

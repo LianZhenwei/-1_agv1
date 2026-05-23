@@ -1,0 +1,4 @@
+<launch>
+    <!-- <node pkg="by_local_path_planning" type="elevator6" name="elevator6"  output="screen"/> -->
+    <node pkg="by_local_path_planning" type="elevator" name="elevator"  output="screen"/>
+</launch>

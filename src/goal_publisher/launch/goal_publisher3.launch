@@ -1,0 +1,30 @@
+<launch>
+    <arg name="max_loops" default="-1"/>
+    <param name="max_loops" value="$(arg max_loops)" /> 
+
+    <param name="goal1_x" value="-10.83"/>
+    <param name="goal1_y" value="31.33"/>
+    <param name="goal1_z" value="0.75"/>
+    <param name="goal1_qx" value="0"/>
+    <param name="goal1_qy" value="0"/>
+    <param name="goal1_qz" value="0"/>
+    <param name="goal1_qw" value="1"/>
+      
+    <param name="goal2_x" value="-3.98"/>
+    <param name="goal2_y" value="32.09"/>
+    <param name="goal2_z" value="0.75"/>
+    <param name="goal2_qx" value="0.00"/>
+    <param name="goal2_qy" value="0.00"/>
+    <param name="goal2_qz" value="0."/>
+    <param name="goal2_qw" value="1"/>
+
+    <param name="goal3_x" value="3"/>
+    <param name="goal3_y" value="32.09"/>
+    <param name="goal3_z" value="0.75"/>
+    <param name="goal3_qx" value="0.00"/>
+    <param name="goal3_qy" value="0.00"/>
+    <param name="goal3_qz" value="0."/>
+    <param name="goal3_qw" value="1"/>
+   
+    <node pkg="goal_publisher" type="loop3" name="loop3" output="screen"/>
+</launch>

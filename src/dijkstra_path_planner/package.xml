@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>dijkstra_path_planner</name>
+  <version>0.0.0</version>
+  <description>The dijkstra_path_planner package</description>
+
+  <maintainer email="you@example.com">Your Name</maintainer>
+
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>nav_msgs</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>tf</build_depend>
+  <build_depend>boost</build_depend>
+  <build_depend>visualization_msgs</build_depend>
+  <build_depend>by_global_path_planning</build_depend>
+
+  <exec_depend>roscpp</exec_depend>
+  <exec_depend>nav_msgs</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>tf</exec_depend>
+  <exec_depend>boost</exec_depend>
+  <exec_depend>visualization_msgs</exec_depend>
+  <exec_depend>by_global_path_planning</exec_depend>
+  
+  <export>
+  </export>
+</package>

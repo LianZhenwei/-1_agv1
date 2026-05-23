@@ -1,0 +1,29 @@
+<launch>
+  <!-- 参数配置 -->
+  <arg name="map_file" default="$(find dwa_local_planner)/maps/map_hygg_floor1.yaml"/>
+  <arg name="path_type" default="straight"/>  <!-- straight, curved, zigzag -->
+  <arg name="obstacle_type" default="moving"/>  <!-- static, moving, random -->
+  <arg name="use_sim_odom" default="true"/>
+  <arg name="use_rviz" default="true"/>
+  
+  <!-- 地图服务器 -->
+  <!-- <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)">
+    <param name="frame_id" value="map"/>
+  </node> -->
+  
+
+  <!-- DWA局部规划器 -->
+  <node name="dwa_local_planner" pkg="dwa_local_planner" type="dwa_local_planner_node" output="screen">
+    <rosparam file="$(find dwa_local_planner)/config/dwa_params.yaml" command="load"/>
+  </node>
+  
+  <!-- 静态变换 -->
+  <!-- <node pkg="tf2_ros" type="static_transform_publisher" name="map_to_odom"
+        args="0 0 0 0 0 0 map odom"/> -->
+  
+  <!-- RViz可视化 -->
+  <!-- <node name="rviz" pkg="rviz" type="rviz" 
+        args="-d $(find dwa_local_planner)/config/dwa.rviz" 
+        if="$(arg use_rviz)"/> -->
+  
+</launch>

@@ -1,0 +1,80 @@
+# =========================
+# ROS catkin build outputs
+# =========================
+build/
+devel/
+install/
+log/
+.logs/
+src/can_pkg/20251226最终第一台四代车的can_pkg.zip
+
+# catkin tools
+.catkin_tools/
+
+# catkin generated files
+.catkin_workspace
+
+# =========================
+# CMake / Make build files
+# =========================
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# =========================
+# C++ build products
+# =========================
+*.o
+*.so
+*.a
+*.out
+*.bin
+*.exe
+
+# =========================
+# Python cache
+# =========================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# =========================
+# VS Code
+# =========================
+.vscode/
+.history/
+
+# =========================
+# CLion / JetBrains
+# =========================
+.idea/
+cmake-build-*/
+
+# =========================
+# ROS runtime / debug files
+# =========================
+*.bag
+*.bag.active
+*.db3
+*.log
+
+# =========================
+# Large media files
+# =========================
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.zip
+*.tar
+*.tar.gz
+*.rar
+
+# =========================
+# Ubuntu / system files
+# =========================
+*~
+.DS_Store
+Thumbs.db

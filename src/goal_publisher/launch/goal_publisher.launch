@@ -1,0 +1,38 @@
+<launch>
+    <arg name="max_loops" default="-1"/>
+    <param name="max_loops" value="$(arg max_loops)" /> 
+
+    <!-- <param name="goal1_x" value="23.788456 "/>
+    <param name="goal1_y" value="0.854536"/>
+    <param name="goal1_z" value="-0.1"/>
+    <param name="goal1_qx" value="0"/>
+    <param name="goal1_qy" value="0"/>
+    <param name="goal1_qz" value="0"/>
+    <param name="goal1_qw" value="1"/> --><!-- 1028室内取料 -->
+    
+    <param name="goal1_x" value="36.9748"/>
+    <param name="goal1_y" value="-21.0383"/>
+    <param name="goal1_z" value="0"/>
+    <param name="goal1_qx" value="0"/>
+    <param name="goal1_qy" value="0"/>
+    <param name="goal1_qz" value="0"/>
+    <param name="goal1_qw" value="1"/><!-- 汉韵公馆 -->
+
+    <param name="goal2_x" value="9.9925"/> 
+    <param name="goal2_y" value="19.0310"/>
+    <param name="goal2_z" value="-2.69"/>
+    <param name="goal2_qx" value="0"/>
+    <param name="goal2_qy" value="0"/>
+    <param name="goal2_qz" value="0.707"/>
+    <param name="goal2_qw" value="0.707"/><!-- 汉韵公馆 -->
+
+    <!-- <param name="goal2_x" value="18.435172"/> 
+    <param name="goal2_y" value="65.229955"/>
+    <param name="goal2_z" value="-2.69"/>
+    <param name="goal2_qx" value="0"/>
+    <param name="goal2_qy" value="0"/>
+    <param name="goal2_qz" value="0.707"/>
+    <param name="goal2_qw" value="0.707"/> --><!-- 1028室外xie料 -->
+
+    <node pkg="goal_publisher" type="loop" name="loop" output="screen"/>
+</launch>

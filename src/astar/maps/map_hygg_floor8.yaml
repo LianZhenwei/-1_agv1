@@ -1,0 +1,7 @@
+image: map_hygg_floor8.pgm
+resolution: 0.050000
+origin: [-50.178284, -9.473298, 0.000000]
+negate: 0
+occupied_thresh: 0.65
+free_thresh: 0.196
+

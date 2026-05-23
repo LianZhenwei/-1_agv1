@@ -1,0 +1,34 @@
+DWALocalPlanner:
+  # 速度限制
+  max_vel_x: 1.5
+  min_vel_x: 0.0
+  max_vel_theta: 2.0
+  min_vel_theta: -2.0
+  
+  # 加速度限制
+  acc_lim_x: 1.0
+  acc_lim_theta: 1.5
+  
+  # 机器人几何参数
+  robot_radius: 0.5
+  robot_width: 0.9
+  robot_length: 1.8
+  
+  # DWA参数
+  sim_time: 2.5
+  v_resolution: 0.05
+  w_resolution: 0.1
+  dt: 0.1
+  
+  # 代价函数权重
+  to_goal_cost_gain: 1.0
+  speed_cost_gain: 0.1
+  obstacle_cost_gain: 2.0
+  path_cost_gain: 1.0
+  
+  # 安全参数
+  safe_dist: 0.3
+  goal_tolerance: 0.3
+  
+  # 地图服务
+  map_service: "/static_map"

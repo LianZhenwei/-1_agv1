@@ -1,0 +1,17 @@
+<launch>
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find urdf_by)/config/latice.rviz" />
+
+    <node pkg="can_pkg" type="mycan_pub" name="mycan_pub"  output="screen"/>
+    <!-- <node pkg="by_global_path_planning" type="djstl" name="djstl"  output="screen"/> -->
+    <node pkg="dijkstra_path_planner" type="dijkstra_path_planner" name="dijkstra_path_planner"  output="screen"/>
+    <node pkg="by_pure_pursuit" type="pure_pursuit" name="pure_pursuit"  output="screen"/>
+    <!-- <node pkg="by_pure_pursuit" type="camera_obs" name="camera_obs"  output="screen"/> -->
+    <!-- <node pkg="by_local_path_planning" type="palletizing" name="palletizing"  output="screen"/> -->
+    <node pkg="tcp_by" type="send_and_receive" name="send_and_receive"  output="screen"/>
+    <node pkg="tcp_by" type="send_and_receive_2" name="send_and_receive_2"  output="screen"/>
+    <node pkg="by_pure_pursuit" type="map_control" name="map_control"  output="screen"/>
+    <rosparam command="load" file="$(env HOME)/agv/user.yaml" /> 
+    <!-- <node pkg="frenet_planning" type="frenet_planning_node" name="frenet_planning_node"  output="screen"/> -->
+    <!-- <node pkg="lider_ros" type="lidarObstacleDetection" name="lidarObstacleDetection" output="screen" />
+    <node pkg="lider_ros" type="control" name="control" output="screen" /> -->
+</launch>
